@@ -1,0 +1,288 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+body {
+	background: #00008B url(img.jpg);
+	background-attachment: fixed;
+	overflow-x: hidden;
+}
+html{
+	overflow-x: hidden;
+}
+
+nav{
+	margin: auto;
+	max-width: 1100px;
+	width: 100%;
+}
+#checkbox-menu, .toggle{
+	display: none;
+}
+.menu{
+	padding: 0;
+	margin: 0;
+	height: 50px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	list-style-type: none;
+}
+.menu li a{
+	color: #FFFFFF;
+	text-decoration: none;
+	align-self: center;
+	font-size: 13px;
+	padding: 10px 15px;
+	transition: background .2s linear;
+}
+.menu li a:hover{
+	background: #00FFFF;
+	border-radius: 3px;
+}
+.menu li a.logo{
+	font-size: 25px;
+	margin-right: 240px;
+}
+.menu li a.contacts{
+	margin-right: 20px;
+}
+.wrapper{
+	margin:0 auto;
+	max-width: 1100px;
+	width: 100%;
+}
+.intro{
+	margin-top: 25px;
+	display: flex;
+	justify-content: flex-end;
+}
+.intro-img{
+	background-image: url(pla.jpg);
+	width: 965px;
+	height: 640px;
+}
+.intro .intro-text{
+	color: #FFFFFF;
+	position: absolute;
+	font-size: 62px;
+	right: 750px;
+	top: 220px;
+}
+.stats{
+	display: flex;
+	margin-top: 130px;
+}
+.stats-line{
+	display: flex;
+}
+.sq
+.stats-text{
+	padding-right: 40px;
+}
+.stats-text h2{
+	color: #FFFFFF;
+	font-size: 40px;
+	margin-bottom: 70px;
+}
+.stats-text p{
+	color: #FFFFFF;
+	margin-top: 50px;
+	font-size: 13px;
+	line-height: 27px;
+}
+.square{
+	width: 200px;
+	height: 200px;
+	background-color: #00FFFF;
+	margin: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.squaree {
+	width: 460px;
+	height: 200px;
+	background-color: #00FFFF;
+	margin: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.stats-square{
+	font-size: 40px;
+	margin-bottom: 15px;
+}
+.square-text{
+	font-size: 17px;
+}
+footer{
+	background: #00FFFF;
+	padding-top: 50px;
+	padding-bottom: 80px;
+}
+.footer-block{
+	display: flex;
+	justify-content: space-between;
+}
+.footer-block h3{
+	font-size: 40px;
+}
+hr{
+	opacity: 1;
+	margin-top: 47px;
+	margin-bottom: 70px;
+}
+.footer-links{
+	display: flex;
+	justify-content: space-between;
+	padding-right: 90px;
+}
+.footer-link{
+	display: flex;
+	flex-direction: column;
+}
+.footer-links-logo{
+	font-size: 25px;
+	margin-right: 26%;
+}
+.footer-link p{
+	text-transform: uppercase;
+	font-size: 13px;
+	margin-bottom: 35px;
+}
+.footer-link a{
+	text-decoration: none;
+	font-size: 13px;
+	margin-bottom: 20px;
+}
+.footer-link a:hover{
+	opacity: 0.4;
+}
+@media screen and (max-width: 765px)
+{
+	.toggle{
+		clear:both;
+		display: block;
+		text-align: center;
+		font-size: 18px;
+		line-height: 40px;
+		width: 100%;
+		color: #FFFFFF;
+		background: #00FFFF;
+		transition: all .1s linear;
+	}
+	.toggle:hover{
+		background: #00FFFF;
+	}
+	#checkbox-menu:checked + label .touch li{
+		opacity: 1;
+		visibility: visible;
+		transition: all .7s linear;
+	}
+	#checkbox-menu:checked + label .touch{
+		height: 350px;
+	}
+	.menu 
+	{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+		height: 0px;
+		transition: height .3s linear;
+	}
+	.menu li{
+		display: flex;
+		align-self: center;
+		width: 95%;
+		opacity: 0;
+		visibility: hidden;
+	}
+	.menu li a{
+		width: 95%;
+		text-align: center;
+		align-content: center;
+	}
+	.menu li a.logo{
+	font-size: 25px;
+	margin-right: 0px;
+}
+.menu li a.contacts{
+	margin-right: 0px;
+}
+.intro 
+{
+	margin-top: 0;
+	display: block;
+	max-width: 100%;
+}
+.intro-img{
+	background-position: bottom 50px right 570px;
+}
+.intro .intro-text
+{
+	position: relative;
+	font-size: 35px;
+	right: -10px;
+	top: 95px;
+}
+.stats{
+	margin-top: 0;
+	flex-direction: column;
+}
+.stats-text{
+	text-align: center;
+	padding: 10px;
+}
+.stats-square{
+	text-align: center;
+}
+.stats-text h2{
+	font-size: 30px;
+	margin-bottom: 10px;
+}
+.stats-text p{
+	margin-top: 5px;
+	font-size: 13px;
+	line-height: 18px;
+}
+.square{
+	display: flex;
+	height: 140px;
+}
+.squaree{
+	display: flex;
+	height: 140px;
+	width: 315px;
+}
+.steps-container{
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.stepblock{
+	margin-top: 20px;
+}
+.steps-text, .steps h2{
+margin-left: 5%;
+margin-bottom: 15px;
+}
+.footer-block{
+	flex-direction: column;
+}
+.footer-logo h3{
+	font-size: 25px;
+	text-align: center;
+}
+.footer-links{
+	flex-wrap: wrap;
+	margin-left: 5%;
+	padding-right: 5%;
+}
+}
